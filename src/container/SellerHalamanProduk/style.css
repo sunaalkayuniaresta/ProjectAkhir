@@ -8,19 +8,60 @@
   overflow: hidden;
   width: 600px;
   height: 436px;
+  margin-top: 30px;
 }
 
 .wrapper-product2 {
   margin-top: 40px;
   display: inline-block;
-  width: 181.33px;
-  /* width: 206px; */
-  height: 198px;
   box-sizing: border-box;
   margin-left: 236px;
-  /* margin-right: 16px; */
-  /* margin-bottom: 10px;
-  border-radius: 4px; */
   background-color: white;
-  /* box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15); */
+}
+
+.deskripsi {
+  width: 600px;
+  height: 410px;
+  margin-left: 236px;
+  border-radius: 16px;
+  background: #ffffff;
+  box-shadow: 0px 0px 4px;
+  padding: 20px;
+  margin-top: 10px;
+}
+
+.keterangan {
+  border-radius: 16px;
+  box-shadow: 0px 0px 4px;
+  width: 336px;
+  height: 266px;
+  position: absolute;
+  display: flex;
+  grid-column: 2/3;
+}
+
+.text-keterangan {
+  margin-top: 10px;
+  margin-left: 15px;
+}
+
+.button-upload-produk {
+  color: white;
+  background-color: #7126b5;
+  border-radius: 16px;
+  width: 304px;
+  height: 48px;
+  padding: 12px 24px 12px 24px;
+  border-color: #7126b5;
+}
+
+.button-edit-produk {
+  color: #7126b5;
+  background-color: white;
+  border-radius: 16px;
+  width: 304px;
+  height: 48px;
+  padding: 12px 24px 12px 24px;
+  margin-top: 10px;
+  border-color: #7126b5;
 }

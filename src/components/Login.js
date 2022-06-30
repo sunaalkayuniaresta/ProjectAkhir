@@ -1,42 +1,41 @@
-import React from "react";
-// import "../style.css";
+import React, { useState } from "react";
+import "../style.css";
 import banner from "../../src/images/SecondHand.jpeg";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./Login.css";
+import { BsEyeSlash } from "react-icons/bs";
+import { BsEye } from "react-icons/bs";
 
 export default function Login() {
+  let [showPassword, setShowPassword] = useState(false);
+  const checkShowPassword = () => {
+    setShowPassword(!showPassword);
+  };
   return (
-    <div className="login">
-      {/* <div className="container"> */}
-      <div className="row">
-        <div className="col-6">
-          <div className="secondhand-img">
-            <img src={banner} width="100%" alt="" />
-          </div>
+    <div className="wrapperLogin">
+      <div className="secondhand-img-login">
+        <img src={banner} width="100%" alt="" />
+      </div>
+      <div className="form-login">
+        <h3 className="title-text-login">Daftar</h3>
+        <label className="label-info-login">Nama</label>
+        <input type="text" className="input-text-login" placeholder="Nama Lengkap" name="Nama" />
+        <label className="label-info-login">Email</label>
+        <input type="email" className="input-text-login" placeholder="Contoh: johndee@gmail.com" name="email" />
+        <label className="label-info-login">Password</label>
+        <div>
+          <input type={showPassword ? "password" : "text"} className="input-text-login" placeholder="Masukkan password" name="password">
+            {/* add icon eyes*/}
+          </input>
+          <button className="icon-password-login">{showPassword ? <BsEyeSlash onClick={checkShowPassword} /> : <BsEye onClick={checkShowPassword} />}</button>
         </div>
-        <div className="col-md-6 sm-12">
-          <div className="form">
-          <div className="formulir-login">
-            {/* <h3 className="h3">Daftar</h3> */}
-            <span className="title-text-login">Masuk</span>
-            <label className="label-info-login">
-              Email
-              <input type="email" className="input-text-login" placeholder="Contoh: johndee@gmail.com" name="email" />
-            </label>
-            <label className="label-info-login">
-              Password
-              <input type="password" className="input-text-login" placeholder="Masukkan password" name="password" />
-            </label>
-            <button className="button-simpan-login">Masuk</button>
-            <label className="text-login">
-              <h6>
-                Belum punya akun? <span style={{ color: "#7126B5" }}>Daftar di sini</span>
-              </h6>
-            </label>
-          </div>
-        </div>
+        <button className="button-simpan-login">Daftar</button>
+        <label className="text-login">
+          <h6>
+            Sudah punya akun? <span style={{ color: "#7126B5" }}>Masuk di sini</span>
+          </h6>
+        </label>
       </div>
     </div>
-  </div>
   );
 }

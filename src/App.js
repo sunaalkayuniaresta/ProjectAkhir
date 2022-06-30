@@ -4,6 +4,8 @@ import SellerDaftarJual from "./container/sellerDaftarJual";
 import Login from "./components/Login";
 import Register from "./components/Register";
 import SellerHalamanProduk from "./container/SellerHalamanProduk";
+import FormInfo from "./components/FormInfo";
+import InfoProduk from "./container/infoProduk";
 
 function App() {
   return (
@@ -12,8 +14,9 @@ function App() {
       {/* <Home/> */}
       {/* <SellerDaftarJual /> */}
       {/* <Login /> */}
-      <Register />
-      {/* <SellerHalamanProduk /> */}
+      {/* <Register /> */}
+      <SellerHalamanProduk />
+      {/* <InfoProduk /> */}
     </div>
   );
 }
