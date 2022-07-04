@@ -5,6 +5,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./Login.css";
 import { BsEyeSlash } from "react-icons/bs";
 import { BsEye } from "react-icons/bs";
+import { Link } from "react-router-dom";
 
 export default function Login() {
   let [showPassword, setShowPassword] = useState(false);
@@ -20,8 +21,6 @@ export default function Login() {
         <h3 className="title-text-login">Daftar</h3>
         <label className="label-info-login">Nama</label>
         <input type="text" className="input-text-login" placeholder="Nama Lengkap" name="Nama" />
-        <label className="label-info-login">Email</label>
-        <input type="email" className="input-text-login" placeholder="Contoh: johndee@gmail.com" name="email" />
         <label className="label-info-login">Password</label>
         <div>
           <input type={showPassword ? "password" : "text"} className="input-text-login" placeholder="Masukkan password" name="password">
@@ -29,10 +28,15 @@ export default function Login() {
           </input>
           <button className="icon-password-login">{showPassword ? <BsEyeSlash onClick={checkShowPassword} /> : <BsEye onClick={checkShowPassword} />}</button>
         </div>
-        <button className="button-simpan-login">Daftar</button>
+        <Link to="/home">
+          <button className="button-simpan-login">Masuk</button>
+        </Link>
         <label className="text-login">
           <h6>
-            Sudah punya akun? <span style={{ color: "#7126B5" }}>Masuk di sini</span>
+            Belum punya akun?{" "}
+            <Link to="/register">
+              <span style={{ color: "#7126B5" }}>Daftar di sini</span>
+            </Link>
           </h6>
         </label>
       </div>

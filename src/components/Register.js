@@ -5,6 +5,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./Register.css";
 import { BsEyeSlash } from "react-icons/bs";
 import { BsEye } from "react-icons/bs";
+import { Link } from "react-router-dom";
 
 export default function Register() {
   let [showPassword, setShowPassword] = useState(false);
@@ -29,10 +30,15 @@ export default function Register() {
           </input>
           <button className="icon-password">{showPassword ? <BsEyeSlash onClick={checkShowPassword} /> : <BsEye onClick={checkShowPassword} />}</button>
         </div>
-        <button className="button-simpan-register">Daftar</button>
+        <Link to="/login">
+          <button className="button-simpan-register">Daftar</button>
+        </Link>
         <label className="text-register">
           <h6>
-            Sudah punya akun? <span style={{ color: "#7126B5" }}>Masuk di sini</span>
+            Sudah punya akun?{" "}
+            <Link to="/home">
+              <span style={{ color: "#7126B5" }}>Masuk di sini</span>
+            </Link>
           </h6>
         </label>
       </div>

@@ -1,11 +1,12 @@
 import InfoProfil from "./container/infoProfil/Index";
-import Home from "./container/home/Index";
+import Home from "./container/landingpage/Index";
 import SellerDaftarJual from "./container/sellerDaftarJual";
 import Login from "./components/Login";
 import Register from "./components/Register";
 import SellerHalamanProduk from "./container/SellerHalamanProduk";
 import FormInfo from "./components/FormInfo";
 import InfoProduk from "./container/infoProduk";
+import InfoPenawaran from "./container/infoPenawaran";
 
 function App() {
   return (
@@ -15,8 +16,10 @@ function App() {
       {/* <SellerDaftarJual /> */}
       {/* <Login /> */}
       {/* <Register /> */}
-      <SellerHalamanProduk />
+      {/* <SellerHalamanProduk /> */}
       {/* <InfoProduk /> */}
+      <InfoPenawaran />
+      {/* <Slider /> */}
     </div>
   );
 }

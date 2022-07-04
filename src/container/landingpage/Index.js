@@ -1,12 +1,12 @@
 import React from "react";
 import Carousel from "../../components/carousel/Index";
 import Kategori from "../../components/kategori/Index";
-import NavbarMain2 from "../../components/navbar/NavbarMain2";
+import NavbarMain from "../../components/navbar/NavbarMain";
 
-export default function SellerDaftarJual() {
+export default function LandingPage() {
   return (
     <div>
-      <NavbarMain2 />
+      <NavbarMain />
       <Carousel />
       <Kategori />
     </div>

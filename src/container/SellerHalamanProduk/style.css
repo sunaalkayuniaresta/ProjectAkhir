@@ -1,28 +1,43 @@
 .img-product2 img {
-  width: 100%;
+  width: "100%";
+}
+
+.icon-next-arrow {
+  padding: 10px; /* ini ditambahkan untuk input ada padding di value input*/
+  border-style: solid;
+  border-color: #d0d0d0;
+  height: 48px;
+  border-radius: 16px;
+  margin: 0px 0px 10px;
+}
+
+.bagidua {
+  display: grid;
+  grid-template-columns: 65% 35%;
+  margin: auto;
+  margin-top: 20px;
+  width: 90%;
 }
 
 .img-product2 {
+  margin: auto;
   border-radius: 16px;
-  position: relative;
   overflow: hidden;
-  width: 600px;
+  width: 650px;
   height: 436px;
-  margin-top: 30px;
 }
 
 .wrapper-product2 {
-  margin-top: 40px;
-  display: inline-block;
-  box-sizing: border-box;
-  margin-left: 236px;
+  /* display: inline-block;
+  box-sizing: border-box; */
+  /* margin-left: 236px; */
   background-color: white;
 }
 
 .deskripsi {
-  width: 600px;
-  height: 410px;
-  margin-left: 236px;
+  margin: auto;
+  width: 650px;
+  height: 390px;
   border-radius: 16px;
   background: #ffffff;
   box-shadow: 0px 0px 4px;
@@ -35,14 +50,24 @@
   box-shadow: 0px 0px 4px;
   width: 336px;
   height: 266px;
-  position: absolute;
-  display: flex;
-  grid-column: 2/3;
+  margin-top: 10px;
+
+  /* display: flex; */
+  /* grid-column: 2/3; */
 }
 
 .text-keterangan {
   margin-top: 10px;
   margin-left: 15px;
+  padding-top: 24px;
+}
+
+.text-keterangan h5 {
+  font-weight: bold;
+}
+
+.text-keterangan p {
+  color: darkgray;
 }
 
 .button-upload-produk {
@@ -64,4 +89,33 @@
   padding: 12px 24px 12px 24px;
   margin-top: 10px;
   border-color: #7126b5;
+}
+
+.seller {
+  width: 336px;
+  height: 80px;
+  border-radius: 16px;
+  box-shadow: 0px 0px 4px;
+  display: grid;
+  flex-direction: row;
+  grid-gap: 20px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 24px;
+  grid-template-columns: 15% 65%;
+}
+
+.img-seller {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+}
+
+.nama-seller h6 {
+  font-weight: bold;
+  padding-top: 15px;
+}
+
+.nama-seller p {
+  color: darkgray;
 }
