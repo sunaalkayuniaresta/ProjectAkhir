@@ -15,7 +15,7 @@ import Register from "./components/Register";
 import SellerHalamanProduk from "./container/SellerHalamanProduk/index";
 import FormInfo from "./components/FormInfo";
 import InfoProduk from "./container/infoProduk/index";
-import InfoPenawaran from "./container/infoPenawaran/i";
+import InfoPenawaran from "./container/infoPenawaran/index";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
