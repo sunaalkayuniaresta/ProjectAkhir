@@ -1,5 +1,10 @@
+body {
+  background-color: aqua;
+}
+
 .img-product2 img {
   width: "100%";
+  background-color: aqua;
 }
 
 .icon-next-arrow {
@@ -31,7 +36,7 @@
   /* display: inline-block;
   box-sizing: border-box; */
   /* margin-left: 236px; */
-  background-color: white;
+  background-color: aqua;
 }
 
 .deskripsi {
@@ -118,4 +123,9 @@
 
 .nama-seller p {
   color: darkgray;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: black;
 }

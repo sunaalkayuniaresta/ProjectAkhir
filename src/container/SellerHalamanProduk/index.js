@@ -1,10 +1,20 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./style.css";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import NavbarMain2 from "../../components/navbar/NavbarMain2";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { FaChevronCircleRight } from "react-icons/fa";
 
 export default function SellerHalamanProduk() {
+  const settings = {
+    dots: true,
+    autoplay: true,
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+  };
   return (
     <div>
       <NavbarMain2 />
@@ -12,12 +22,17 @@ export default function SellerHalamanProduk() {
         <div className="bungkuskiri">
           <div className="wrapper-product2">
             <div className="img-product2">
-              <img src={require("../../images/jam-tangan3.png")} alt="jam" />
-              <FaChevronCircleRight className="icon-next-arrow" />
+              <Slider {...settings}>
+                <div>
+                  <img src={"https://images.unsplash.com/photo-1588250318414-908688966feb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1332&q=80"} alt="Credit to Joshua Earle on Unsplash" />
+                </div>
+                <div>
+                  <img src={"https://images.unsplash.com/photo-1588250318414-908688966feb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1332&q=80"} alt="Credit to Joshua Earle on Unsplash" />
+                </div>
+              </Slider>
+              {/* <img src={require("../../images/jam-tangan3.png")} alt="jam" />
+              <FaChevronCircleRight className="icon-next-arrow" /> */}
             </div>
-            {/* <div className="arrow">
-              <FaChevronCircleRight className="icons-next-arrow" />
-            </div> */}
           </div>
           <div className="deskripsi">
             <h3>Deskripsi</h3>

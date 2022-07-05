@@ -9,6 +9,10 @@ import { Link } from "react-router-dom";
 
 export default function Register() {
   let [showPassword, setShowPassword] = useState(false);
+  const [nama, setNama] = useState();
+  const [email, setEmail] = useState();
+  let [password, setPassword] = useState();
+
   const checkShowPassword = () => {
     setShowPassword(!showPassword);
   };
@@ -20,14 +24,16 @@ export default function Register() {
       <div className="form-register">
         <h3 className="title-text-register">Daftar</h3>
         <label className="label-info-register">Nama</label>
-        <input type="text" className="input-text-register" placeholder="Nama Lengkap" name="Nama" />
+        <input type="text" className="input-text-register" placeholder="Nama Lengkap" name="Nama" onChange={(e) => setNama(e.target.value)} />
+        {nama}
         <label className="label-info-register">Email</label>
-        <input type="email" className="input-text-register" placeholder="Contoh: johndee@gmail.com" name="email" />
+        <input type="email" className="input-text-register" placeholder="Contoh: johndee@gmail.com" name="email" onChange={(e) => setEmail(e.target.value)} />
+        {email}
         <label className="label-info-register">Password</label>
         <div>
-          <input type={showPassword ? "password" : "text"} className="input-text-register" placeholder="Masukkan password" name="password">
-            {/* add icon eyes*/}
-          </input>
+          <input type={showPassword ? "password" : "text"} className="input-text-register" placeholder="Masukkan password" name="password" onChange={(e) => setPassword(e.target.value)} />
+          {password}
+          {/* add icon eyes*/}
           <button className="icon-password">{showPassword ? <BsEyeSlash onClick={checkShowPassword} /> : <BsEye onClick={checkShowPassword} />}</button>
         </div>
         <Link to="/login">
