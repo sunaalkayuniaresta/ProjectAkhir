@@ -1,6 +1,5 @@
 import React, { useState } from "react";
-import "../style.css";
-import banner from "../../src/images/SecondHand.jpeg";
+import banner from "../../../src/images/SecondHand.jpeg";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./Register.css";
 import { BsEyeSlash } from "react-icons/bs";
@@ -42,7 +41,7 @@ export default function Register() {
         <label className="text-register">
           <h6>
             Sudah punya akun?{" "}
-            <Link to="/home">
+            <Link to="/login">
               <span style={{ color: "#7126B5" }}>Masuk di sini</span>
             </Link>
           </h6>

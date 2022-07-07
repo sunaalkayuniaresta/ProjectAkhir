@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
-import "../style.css";
-import banner from "../../src/images/SecondHand.jpeg";
+// import "../style.css";
+import banner from "../../../src/images/SecondHand.jpeg";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "./Login.css";
+import "./style.css";
 import { BsEyeSlash } from "react-icons/bs";
 import { BsEye } from "react-icons/bs";
 import { Link } from "react-router-dom";

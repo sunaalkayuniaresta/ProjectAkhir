@@ -1,12 +1,12 @@
 import InfoProfil from "./container/infoProfil/Index";
 import Home from "./container/landingpage/Index";
 import SellerDaftarJual from "./container/sellerDaftarJual";
-import Login from "./components/Login";
-import Register from "./components/Register";
+import Login from "./components/login/Login";
+import Register from "./components/register/Register";
 import SellerHalamanProduk from "./container/SellerHalamanProduk";
 import FormInfo from "./components/FormInfo";
 import InfoProduk from "./container/infoProduk";
-import InfoPenawaran from "./container/infoPenawaran";
+// import InfoPenawaran from "./container/infoPenawaran";
 
 function App() {
   return (
@@ -18,7 +18,7 @@ function App() {
       {/* <Register /> */}
       {/* <SellerHalamanProduk /> */}
       {/* <InfoProduk /> */}
-      <InfoPenawaran />
+      {/* <InfoPenawaran /> */}
       {/* <Slider /> */}
     </div>
   );

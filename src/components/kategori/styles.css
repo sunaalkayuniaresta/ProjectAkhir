@@ -1,4 +1,4 @@
-.container {
+.category .container {
   margin: 0px 70px;
   width: 100%;
 }
@@ -18,14 +18,11 @@
   flex-direction: row;
 }
 
-.button-jual {
+/* .button-jual {
   position: absolute;
   width: 115px;
   height: 52px;
-  /* left: 670px;
-  top: 900px; */
   border-radius: 12px;
   background-color: #7126b5;
-  /* margin: auto; */
   margin: 0% 65%;
-}
+} */
