@@ -89,7 +89,7 @@ body {
   border-style: none;
 }
 
-.info-buyer .card-title {
+/* .info-buyer .card-title {
   font-size: 14px;
   font-weight: bold;
 }
@@ -97,7 +97,7 @@ body {
 .info-buyer .card-text {
   color: #8a8a8a;
   font-size: 10px;
-}
+} */
 
 .info-product .card {
   flex-direction: row;
