@@ -282,6 +282,7 @@ body {
 .modal-content {
   width: 360px;
   height: 456px;
+  border-radius: 16px;
 }
 
 .about-bargain .row {
