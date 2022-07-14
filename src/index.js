@@ -15,8 +15,9 @@ import Register from "./components/register/Register";
 import SellerHalamanProduk from "./container/SellerHalamanProduk/index";
 import FormInfo from "./components/FormInfo";
 import InfoProduk from "./container/infoProduk/index";
-// import InfoPenawaran from "./container/infoPenawaran/index";
 import Buyer from "./container/Buyer/index";
+import InfoPenawar from "./container/infopenawar/index";
+import DaftarJualEmpty from "./container/DaftarjualEmpty/index";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -31,8 +32,9 @@ root.render(
       <Route path="/halamanproduk" element={<SellerHalamanProduk />} />
       <Route path="/daftarjual" element={<SellerDaftarJual />} />
       <Route path="/forminfo" element={<FormInfo />} />
-      {/* <Route path="/infopenawaran" element={<InfoPenawaran />} /> */}
       <Route path="/buyer" element={<Buyer />} />
+      <Route path="/infopenawar" element={<InfoPenawar />} />
+      <Route path="/daftarjualempty" element={<DaftarJualEmpty />} />
     </Routes>
   </BrowserRouter>
 );
