@@ -16,11 +16,11 @@ function ModalTerima(props) {
   return (
     <Modal {...props} size="sm" aria-labelledby="contained-modal-title-vcenter" centered>
       <Modal.Header closeButton>
+      </Modal.Header>
         <Modal.Title id="contained-modal-title-vcenter">
           <span style={{ fontWeight: "bold", fontSize: "14px" }}>Yeay kamu berhasil mendapat harga yang sesuai</span>
           <p style={{ marginTop: "14px", textAlign: "justify", fontSize: "12px", color: "#8a8a8a" }}>Segera hubungi pembeli melalui whatsapp untuk transaksi selanjutnya</p>
         </Modal.Title>
-      </Modal.Header>
       <Modal.Body>
         <div className="about-bargain">
           <div className="row">
