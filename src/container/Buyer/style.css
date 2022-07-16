@@ -142,3 +142,72 @@
 .card-jewelry {
   margin-top: 12px;
 }
+
+@media only screen and (max-width: 600px) {
+  body {
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+  }
+
+  .navbar {
+    visibility: hidden;
+  }
+  .carousel {
+    position: absolute;
+    width: 360px;
+    height: 300px;
+    left: 0px;
+    top: 0px;
+  }
+  .about-product .card {
+    position: absolute;
+    width: 328px;
+    height: 98px;
+    left: -13px;
+    top: 253px;
+  }
+  .about-seller .card {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 16px;
+    gap: 10px;
+
+    position: absolute;
+    width: 328px;
+    height: 80px;
+    left: -15px;
+    top: 347px;
+  }
+
+  .product-description .card {
+    position: absolute;
+    width: 328px;
+    height: 255px;
+    left: 16px;
+    top: 443px;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+
+  .card .btn-edit {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 10px 0px 10px;
+    gap: 4px;
+
+    /* position: absolute; */
+    width: 328px;
+    height: 48px;
+    left: -6px;
+    top: 1065px;
+    position: fixed;
+    text-align: justify;
+  }
+
+  .card-body {
+    margin-top: -15px;
+    margin-left: -7px;
+  }
+}

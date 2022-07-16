@@ -64,24 +64,28 @@ export default function Buyer() {
   const [modalShow, setModalShow] = React.useState(false);
   return (
     <>
-      <NavbarMain2 />
+      <div className="navbar">
+        <NavbarMain2 />
+      </div>
       <div className="buyer-halaman-produk">
         <div className="container">
           <div className="col-md-6 sm-12" style={{ width: "100%" }}>
-            <Carousel>
-              <Carousel.Item>
-                <img className="d-block w-100" src={jam} alt="First slide" />
-              </Carousel.Item>
-              <Carousel.Item>
-                <img className="d-block w-100" src={jam} alt="Second slide" />
-              </Carousel.Item>
-              <Carousel.Item>
-                <img className="d-block w-100" src={jam} alt="Third slide" />
-              </Carousel.Item>
-              <Carousel.Item>
-                <img className="d-block w-100" src={jam} alt="Fourth slide" />
-              </Carousel.Item>
-            </Carousel>
+            <div className="carousel">
+              <Carousel>
+                <Carousel.Item>
+                  <img className="d-block w-100" src={jam} alt="First slide" />
+                </Carousel.Item>
+                <Carousel.Item>
+                  <img className="d-block w-100" src={jam} alt="Second slide" />
+                </Carousel.Item>
+                <Carousel.Item>
+                  <img className="d-block w-100" src={jam} alt="Third slide" />
+                </Carousel.Item>
+                <Carousel.Item>
+                  <img className="d-block w-100" src={jam} alt="Fourth slide" />
+                </Carousel.Item>
+              </Carousel>
+            </div>
 
             <div className="product-description">
               <div className="card">
